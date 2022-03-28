@@ -1,6 +1,4 @@
-# javascript-data-structures
-Examples of Data Structures made with JavaScript.
+# javascript-data-structures-and-algorithms
 
-This repository will be filled in the coming weeks with examples I've learnt about my self studies in Data Structures. Another repository will be made to give examples of algorithms. 
+Examples of the most common Data Structures and Algorithms implemented with JavaScript.
 
-Learning in public as they say.
