@@ -58,19 +58,19 @@ function sortedSquaredArray(nums) {
 function sortedSquaresOptimal(nums) {
   const squares = Array.from(nums)
 
-  let smallerValueIndex = 0
-  let largerValueIndex = nums.length - 1
+  let smallerIndex = 0
+  let largerIndex = nums.length - 1
 
   for (let index = nums.length - 1; index >= 0; index--) {
-    let smallerValue = nums[smallerValueIndex]
-    let largerValue = nums[largerValueIndex]
+    let smallerValue = nums[smallerIndex]
+    let largerValue = nums[largerIndex]
 
     if (Math.abs(smallerValue) > Math.abs(largerValue)) {
       squares[index] = smallerValue * smallerValue
-      smallerValueIndex += 1
+      smallerIndex += 1
     } else {
       squares[index] = largerValue * largerValue
-      largerValueIndex -= 1
+      largerIndex -= 1
     }
   }
 
