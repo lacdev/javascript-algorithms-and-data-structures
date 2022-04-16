@@ -17,10 +17,10 @@ O(n) time | O(1) space where n is the length of the array.
 */
 
 function isValidSubsequence(array, sequence) {
-  let seqIdx = 0
+  let sequenceIndex = 0
   for (let index = 0; index < array.length; index++) {
-    if (seqIdx === sequence.length) break
-    if (sequence[seqIdx] === array[index]) seqIdx += 1
+    if (sequenceIndex === sequence.length) break
+    if (sequence[sequenceIndex] === array[index]) sequenceIndex += 1
   }
-  return seqIdx == sequence.length
+  return sequenceIndex === sequence.length
 }

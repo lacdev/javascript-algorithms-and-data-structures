@@ -19,9 +19,6 @@ Otherwise we store the neededValue as the key and the current index as the value
 
 If not matches are found, we return an empty array.
 
-Notes: We use len variable to avoid calculating the length of the array
-in each loop iteration.
-
 Big O Notation: 
 
 O(n) time | O(n) space 
@@ -33,9 +30,8 @@ n in space is our hashTable.
 
 function twoSum(numbers, target) {
   const hashTable = {}
-  const len = numbers.length
 
-  for (let index = 0; index < len; index++) {
+  for (let index = 0; index < numbers.length; index++) {
     let neededValue = target - numbers[index]
     if (neededValue in hashTable) {
       return [hashTable[neededValue], index]

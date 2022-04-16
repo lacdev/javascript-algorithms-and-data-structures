@@ -10,7 +10,8 @@ If 1 in results, that means the home team won, otherwise the away team won. [1 =
 
 We traverse the competitions array and we will store the current teams in a hashtable.
 
-For every round, we will add the winning team to the hasthable if it wasn't there before and give it 3 points. If already there, we will add another 3 points.
+For every round, we will add the winning team to the hasthable if it wasn't there before and give it 3 points. 
+If already there, we will add another 3 points.
 
 We will determine the team with the most points from the hashtable and keep track of it with the currentBestTeam variable. 
 
