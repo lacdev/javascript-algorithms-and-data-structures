@@ -31,7 +31,7 @@ The second line contains  space-separated integers that describe arr[n].
 
 Big O Notation:
 O(n) time where n is the length of the input array.
-O(n) space where n are the variables that we are creating to keep track of the values.
+O(n) space where n is the hashmap we created to keep track of each value.
 
 
 */
