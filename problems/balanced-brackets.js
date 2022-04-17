@@ -7,7 +7,8 @@ An input string is valid if:
 Open brackets must be closed by the same type of brackets.
 Open brackets must be closed in the correct order.
 
-We are going to use a Stack to solve this problem. We want to keep track of every pair of matching bracket. For every opening brack we want to find it's corresponding closing bracket.
+We are going to use a Stack to solve this problem. We want to keep track of every pair of matching bracket. 
+For every opening brack we want to find it's corresponding closing bracket.
 
 We need track of the last opening bracket that we saw.
 
