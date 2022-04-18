@@ -41,7 +41,11 @@ function processBackspace(string) {
 
   for (const char of string) {
     if (char === '#') {
-      stack.pop()
+      if (stack.length > 0) {
+        stack.pop()
+      } else {
+        continue
+      }
     } else {
       stack.push(char)
     }
